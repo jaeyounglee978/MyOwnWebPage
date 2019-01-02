@@ -1,0 +1,25 @@
+[t]Education[/t]
+	[y]2013 ~ 2018[/y]
+		[c][l KAIST]Korea Advanced Institute of Science and Technology[/l], the Bachelor of Science[/c]
+		[d]Double Major in Physics and Computer Science[/d]
+	[y]2010 ~ 2012[/y]
+		[c]Graduate [l sjhs]Suji High school[/l][/c]
+[t]Career[/t]
+	[y]2013 ~ [/y]
+	[c][l donuts]株式会社Donuts[/l]	新規開発部[/c]
+[t]Activity[/t]
+	[y]2016 ~ 2017[/y]
+	[c]KAIST Game development circle, [l haje]HAJE[/l] leader[/c]
+[t]Personal Project[/t]
+	[y]2018[/y]
+	[c]pssss[/c]
+[t]Language Skills[/t]
+	[y]English[/y]
+	[c]TOEIC 895 (2018/02/25)[/c]
+	[y]Japanese[/y]
+	[c]JLPT N2 (2018/08/19)[/c]
+*** href ***
+sjhs:http://www.suji.hs.kr
+KAIST:https://www.kaist.ac.kr
+donuts:https://www.donuts.ne.jp/
+haje:https://haje.org/intro

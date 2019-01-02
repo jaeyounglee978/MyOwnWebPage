@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jaeyounglee's webpage - {% block title %}{% endblock %}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  		<link rel="stylesheet" type="text/css" href ="{{ url_for('static', filename='style.css') }}">
+
+
+  		<script>
+  			var onResize = function() {
+				// apply dynamic padding at the top of the body according to the fixed navbar height
+				$("body").css("padding-top", $(".navbar-fixed-top").height());
+			};
+
+			// attach the function to the window resize event
+			$(window).resize(onResize);
+
+			// call it also when the page is ready after load or reload
+			$(function() {
+				onResize();
+			});
+  		</script>
+
+		{% block scripts %}{% endblock %}
+
+	</head>
+	<body>
+		<nav class="navbar navbar-fixed-top navbar-inverse navbar-dark bg-primary">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">
+					<font color="white">Fixed top</font>
+				</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="{{ url_for('my_info') }}"><u>About Me</u></a></li>
+				<li><a href="/daily-saechi"><u>Daily Saechi</u></a></li>
+				<li><a href="/etc"><u>ETC</u></a></li>
+			</ul>
+		</nav>
+
+		<div class="contaier-fluid content-block">
+			<div class="form-group">
+				<label for="formInput">Search</label>
+				<input type="text" class="form-control id="formInput">
+			</div>
+			<h1>{% block head %}{% endblock %}</h1>
+			{%block body %}{% endblock %}
+		</div>
+	</body>
+	<footer class="footer">
+		<div> Contact </div>
+		<div> This web-page is constructed by Flask</div>
+		<div> e-mail : jaeyounglee978@gmail.com</div>
+		<div> twitter : aru_soc </div>
+	</footer>
+</html>

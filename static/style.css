@@ -1,0 +1,59 @@
+.content-block
+{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.top-spacing
+{
+	padding-top: 10px;
+}
+
+.post
+{
+	font-family: Helvetica;
+	max-width: 1000px;
+	padding-top: 20px;
+	padding-left: 5%;
+	margin-right: auto;
+}
+
+.footer
+{
+	margin-top: 50px;
+	padding-top: 10px;
+	border-top: 2px solid gray;
+	font-family: Helvetica;
+	color: gray;
+	max-width: 800px;
+	margin-left: 20px;
+	margin-right: auto;
+	font-weight: lighter;
+}
+
+year_content
+{
+	margin-left: 20px;
+}
+
+dyear
+{
+	display: inline-block;
+	font-size:20px;
+	font-weight: bold
+}
+
+dcontext
+{
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+ddesc
+{
+	display: block;
+	font-size: 13px
+	font-weight: lighter;
+	margin-left: 25%;
+}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ super() }}
+	About Me
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block head %}
+	About JaeYoung Lee
+{% endblock %}
+
+{% block body %}
+<div class="post">
+	{% for part in items %}
+		<h2 class="title">{{ part["title"] }}</h2>
+		{% for content in part["year-content"] %}
+		<year_content>
+			<dyear>{{ content["year"] }}</dyear>
+			{% for i in content["content"] %}
+				{% if i["tag"] == "c" %}
+					<dcontext>{{ i["text"] | safe }}</dcontext>
+				{% endif %}
+				{% if i["tag"] == "d" %}
+					<ddesc>{{ i["text"] | safe }}</ddesc>
+				{% endif %}
+			{% endfor %}
+		</br>
+		</year_content>
+		{% endfor %}
+	</br>
+	{% endfor %}
+</div>
+{% endblock %}
